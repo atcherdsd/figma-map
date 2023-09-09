@@ -1,0 +1,111 @@
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+  --color-text: #FFFFFF;
+  --bg-overlay: rgba(2, 15, 32, 0.4);
+  --bg-primary: rgba(106, 191, 75, 0.7);
+  --bg-secondary: rgba(56, 119, 238, 0.7);
+  --bg-primary-open: rgb(106, 191, 75);
+  --bg-secondary-open: rgb(56, 119, 238);
+  --font: 20px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  line-height: 1;
+  color: #fff;
+  font-family: var(--font-family);
+  position: relative;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  background-image: url(/assets/images/map.png);
+  background-size: cover;
+  background-position: center center;
+}
+.overlay {
+  height: 100%;
+  background-color: var(--bg-overlay);
+  position: relative;
+}
+.button-primary,
+.button-secondary {
+  height: 41px;
+  width: 41px;
+  border-radius: 50%;
+  color: var(--color-text);
+  font-size: var(--font);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.button-primary {
+  background-color: var(--bg-primary);
+}
+.button-secondary {
+  background-color: var(--bg-secondary);
+}
+button:first-child {
+  top: 66.1%;
+  left: 23.2%;
+}
+button:nth-child(2) {
+  top: 44.63%;
+  left: 35.78%;
+}
+button:nth-child(3) {
+  top: 37.4%;
+  left: 59.79%;
+}
+button:nth-child(4) {
+  top: 73.15%;
+  left: 57.66%;
+}
+button:nth-child(5) {
+  top: 61.94%;
+  left: 68%;
+}
+button:nth-child(6) {
+  top: 26.1%;
+  left: 30.2%;
+}
+button:nth-child(7) {
+  top: 58.24%;
+  left: 56.3%;
+}
+button:nth-child(8) {
+  top: 44%;
+  left: 73.65%;
+}
+button:nth-child(9) {
+  top: 20.83%;
+  left: 71.51%;
+}
+button:nth-child(10) {
+  top: 66%;
+  left: 83%;
+}
+
+.open {
+  width: auto;
+  padding: 0 15px;
+  border-radius: 40px;
+}
+.button-primary.open {
+  background-color: var(--bg-primary-open);
+}
+.button-secondary.open {
+  background-color: var(--bg-secondary-open);
+}
